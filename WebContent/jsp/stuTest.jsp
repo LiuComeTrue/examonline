@@ -81,7 +81,7 @@ body{
 	border-radius: 20px;
 }
 #pageChange{
-	height: 40px;
+	height: 30px;
 	width: 280px;
 	padding-bottom:10px;
 	margin: 0 auto;
@@ -90,14 +90,14 @@ body{
 }
 .title{
 	padding-left: 50px;
-	font-size:18px;
+	font-size:16px;
 	font-weight: bold;
 }
 .answer{
-	padding:10px;
-	padding-top:20px; 
+	padding:5px;
+	padding-top:10px; 
 	padding-left: 60px;
-	font-size:18px;
+	font-size:13px;
 	font-weight: normal;
 }
 #sbmBtn{
@@ -107,6 +107,7 @@ body{
 	padding-top: 10px;
 }
 </style>
+
 	
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="./layer-v3.1.1/layer/layer.js"></script>
@@ -244,7 +245,7 @@ timer = setInterval("CountDown()",1000);
 <div id="body">
 	<div id="Content">
 		<div id="time">
-		<h2 id="countdown">距离考试结束还有</h2>
+		<h3 id="countdown">距离考试结束还有</h3>
 		</div>
 		<div id="formDiv">
 		<form id="TestForm" action="${pageContext.request.contextPath}/TestSubmit" method="post" onsubmit="return check()">

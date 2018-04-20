@@ -60,7 +60,7 @@ public class EnterTest extends HttpServlet {
 	        if (ntime.before(sTime)) {
 	        	List<choicequestion> list1 = tdao.findchoiceques();
 	        	StringBuffer sb = new StringBuffer();
-	        	for (int i = 1; i <= 50; i++) {	        		
+	        	for (int i = 1; i <= list1.size(); i++) {	        		
 	        		if (i == 1)
 	        			sb.append("<div class=\"con\" style=\"display: block;\">");
 	        		else if (i % 5 == 1) {
@@ -83,7 +83,7 @@ public class EnterTest extends HttpServlet {
 	        		}
 	        	}
 	        	List<fillquestion> list2 = tdao.findfillques();
-	        	for (int i = 51; i <= 100; i++) {
+	        	for (int i = 51; i <= list2.size() + 50; i++) {
 	        		if (i % 5 == 1) {
 	        			sb.append("<div class=\"con\" style=\"display: none;\">");
 	        		}
