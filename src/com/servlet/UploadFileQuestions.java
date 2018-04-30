@@ -72,7 +72,8 @@ public class UploadFileQuestions extends HttpServlet {
 	    Files files = smartUpload.getFiles();
 	    File file = files.getFile(0);
 	    String fileName = String.valueOf(d) + "." + file.getFileExt();
-	    String path = "/upload/" + fileName;
+	    //String path = "/upload/" + fileName;
+	    String path = "D:/" + fileName;
 	    //将文件保存到指定的目录下
 	    try {
 			file.saveAs(path);

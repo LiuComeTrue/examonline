@@ -23,7 +23,8 @@ public class ReadFile {
 	public int readChoiceFile() throws IOException {
 		int result = 0;
 		//System.out.println(fileName);
-		File f=new File("C:\\Users\\ZC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp1\\wtpwebapps\\examOnline\\upload\\" + fileName);
+		//File f=new File("C:\\Users\\ZC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp1\\wtpwebapps\\examOnline\\upload\\" + fileName);
+		File f = new File("D:\\" + fileName);
 		FileInputStream in;  
 		in = new FileInputStream(f);  
 		BufferedReader br=new BufferedReader(new InputStreamReader(in,"GBK"));  	          
@@ -69,7 +70,8 @@ public class ReadFile {
 	//打开填空题文件并存入数据库
 	public int readFillFile() throws IOException {
 		int result = 0;
-		File f=new File("C:\\Users\\ZC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp1\\wtpwebapps\\examOnline\\upload\\" + fileName);
+		//File f=new File("C:\\Users\\ZC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp1\\wtpwebapps\\examOnline\\upload\\" + fileName);
+		File f = new File("D:\\" + fileName);
 		FileInputStream in;  
 		in = new FileInputStream(f);  
 		BufferedReader br=new BufferedReader(new InputStreamReader(in,"GBK"));  	          

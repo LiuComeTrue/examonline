@@ -186,7 +186,8 @@ p{
     											<br/>&nbsp;结尾一行输入“答案”（没有双引号）然后换行，然后依题目顺序输出一行答案选项（空格分隔）；
     											<br/>&nbsp;文件不得出现空行；<br/>
     								3.填空题文件格式：<br/>&nbsp;题目占一行，答案占下一行，依此类推输入所有题目；
-    												<br/>&nbsp;文件不得出现空行。</p>
+    												<br/>&nbsp;文件不得出现空行。<br/>
+    								4.文件上传路径为D盘根目录</p>
 		</div>
 		  <button type="submit" class="btn btn-default">提交</button>
 		</form>
